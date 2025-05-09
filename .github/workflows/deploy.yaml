@@ -2,7 +2,7 @@ name: Test & Deploy FastAPI to Cloud Run
 
 on:
   push:
-    branches: [main]
+    branches: [main,develop]
 
 jobs:
   test-and-deploy:
