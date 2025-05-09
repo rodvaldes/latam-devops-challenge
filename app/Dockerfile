@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 8080
 
 # Comando por defecto para ejecutar la app localmente dentro de Docker
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8080", "--reload"]
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8080"]
