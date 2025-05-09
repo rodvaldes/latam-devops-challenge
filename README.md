@@ -194,7 +194,7 @@ pytest tests/test_api.py
 
 # Publicar mensaje a Pub/Sub (opcional, ver publisher/publisher.py)
 python publisher/publisher.py
-
+```
 # Supuestos y mejoras posibles
 
 * Se asume un formato de datos simple (flight_id, status, timestamp).
@@ -210,7 +210,7 @@ python publisher/publisher.py
 * Integración con IDP Portal o Backstage.
 
 * Integración con Jira Cloud para obtención de métricas, gestión de proyecto, automatizaciones de flujo de "trabajo", habilitación ITSM con Jira Service Management.
-```
+
 
 Contacto
 Rodrigo Valdés
