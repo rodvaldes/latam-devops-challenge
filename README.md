@@ -36,11 +36,12 @@ curl https://fastapi-app-980942243451.us-central1.run.app/datos |jq |less
 
 ```bash
 .
+├── .github/ # Workflows de Github Actions pasa CI/CD
 ├── app/ # API HTTP con FastAPI (exposición de datos desde BigQuery)
-├── publisher/ # Scripts para simular la publicación de eventos a Pub/Sub
-├── tests/ # Prueba de integración de la API
 ├── iac/terraform/ # Infraestructura como código (opcional)
-├── requirements.txt # Dependencias del proyecto
+├── publisher/ # Scripts para simular la publicación de eventos a Pub/Sub
+├── utils/ # Scripts utilitarios
+├── .gitignore
 └── README.md
 ```
 
