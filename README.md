@@ -124,7 +124,7 @@ La estructura modular del código permite separar ambientes y reutilizar compone
 
 Este sistema sigue un patrón event-driven. Un publicador simula eventos de vuelos y los envía a un tópico Pub/Sub. Un suscriptor (Python) escucha y guarda los datos en BigQuery. Luego, una API FastAPI (en Cloud Run) expone los datos en formato JSON.
 
-
+```bash
 +-------------------+
 |  Simulador/       |
 |  Publicador de    |
@@ -168,7 +168,7 @@ Este sistema sigue un patrón event-driven. Un publicador simula eventos de vuel
 |    Usuario final  |
 |  (Browser / curl) |
 +-------------------+
-
+```
 
 ---
 
