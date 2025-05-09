@@ -1,13 +1,38 @@
 # LATAM DevSecOps/SRE Challenge Rodrigo Valdés
 
-[![Test & Deploy FastAPI to Cloud Run](https://github.com/rodvaldes/latam-devops-challenge/actions/workflows/deploy.yaml/badge.svg)](https://github.com/rodvaldes/latam-devops-challenge/actions/workflows/deploy.yaml)
+[![Deploy Status](https://github.com/rodvaldes/latam-devops-challenge/actions/workflows/deploy.yml/badge.svg?branch=develop)](https://github.com/rodvaldes/latam-devops-challenge/actions/workflows/deploy.yml)
+![Python](https://img.shields.io/badge/python-3.11-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
 
+Aplicación FastAPI desplegada en Google Cloud Run como parte del challenge técnico para LATAM Airlines.  
+Demuestra despliegue automatizado, ingesta de datos con Pub/Sub, almacenamiento en BigQuery y exposición vía API HTTP.
 
-Este repositorio contiene la solución al desafío técnico de LATAM Airlines. El objetivo es construir un sistema en la nube que permita ingestar, almacenar y exponer datos mediante IaC, CI/CD y una arquitectura resiliente.
+🔗 **API en producción:**  
+[https://fastapi-app-980942243451.us-central1.run.app/datos](https://fastapi-app-980942243451.us-central1.run.app/datos)
 
+## Prueba
+
+```
+curl https://fastapi-app-980942243451.us-central1.run.app/datos |jq |less
+ % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   832  100   832    0     0    885      0 --:--:-- --:--:-- --:--:--   886
+[
+  {
+    "flight_id": "flight10",
+    "status": "delayed",
+    "timestamp": "2024-01-10T00:00:00+00:00"
+  },
+  ...........
+  {
+    "flight_id": "flight1",
+    "status": "ontime",
+    "timestamp": "2024-01-01T00:00:00+00:00"
+  }
+]
 ---
 
-## 📦 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```bash
 .
