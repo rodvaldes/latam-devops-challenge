@@ -1,7 +1,13 @@
+# GCP y dependencias
 google-cloud-storage==2.16.0
 google-auth==2.29.0
 google-auth-oauthlib==1.2.0
-grpcio==1.64.0
+google-cloud-bigquery==3.18.0
+
+# grpcio y protobuf compatibles
+grpcio==1.62.1
 protobuf==4.25.3
-uvicorn
+
+# API
+uvicorn[standard]
 fastapi
