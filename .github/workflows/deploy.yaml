@@ -29,7 +29,7 @@ jobs:
         pip install pytest
 
     - name: Run tests
-      run: pytest tests/
+      run: pytest app/tests/
 
     - name: Authenticate to Google Cloud
       uses: google-github-actions/auth@v1
