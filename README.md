@@ -1,6 +1,6 @@
 # LATAM DevSecOps/SRE Challenge Rodrigo Valdés
 
-[![Deploy Status](https://github.com/rodvaldes/latam-devops-challenge/actions/workflows/deploy.yml/badge.svg?branch=develop)](https://github.com/rodvaldes/latam-devops-challenge/actions/workflows/deploy.yml)
+[![Deploy Status](https://github.com/rodvaldes/latam-devops-challenge/actions/workflows/deploy.yaml/badge.svg)](https://github.com/rodvaldes/latam-devops-challenge/actions/workflows/deploy.yaml)
 ![Python](https://img.shields.io/badge/python-3.11-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
