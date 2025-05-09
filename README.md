@@ -1,6 +1,6 @@
 # LATAM DevSecOps/SRE Challenge Rodrigo Valdés
 
-[![Deploy Status](https://github.com/rodvaldes/latam-devops-challenge/actions/workflows/deploy.yml/badge.svg)](https://github.com/rodvaldes/latam-devops-challenge/actions/workflows/deploy.yml)
+[![Test & Deploy FastAPI to Cloud Run](https://github.com/rodvaldes/latam-devops-challenge/actions/workflows/deploy.yaml/badge.svg)](https://github.com/rodvaldes/latam-devops-challenge/actions/workflows/deploy.yaml)
 
 
 Este repositorio contiene la solución al desafío técnico de LATAM Airlines. El objetivo es construir un sistema en la nube que permita ingestar, almacenar y exponer datos mediante IaC, CI/CD y una arquitectura resiliente.
