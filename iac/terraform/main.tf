@@ -36,7 +36,8 @@ module "bigquery_core" {
   tables = {
     # Definición de tablas en el dataset
     raw_events = {
-    schema = file("${path.root}/schemas/raw_events_schema.json")
+    schema = file("${path.module}/schemas/raw_events_schema.json")
+
     }
   }
 }
