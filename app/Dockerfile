@@ -1,5 +1,5 @@
 # Etapa base
-FROM python:3.13-alpine3.21
+FROM python:3.11-slim
 
 # Establecer directorio de trabajo
 WORKDIR /app
