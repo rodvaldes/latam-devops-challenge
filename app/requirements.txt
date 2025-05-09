@@ -4,3 +4,4 @@ google-auth-oauthlib==1.2.0
 grpcio==1.64.0
 protobuf==4.25.3
 uvicorn
+fastapi
