@@ -3,8 +3,12 @@ name: Test & Deploy FastAPI to Cloud Run
 on:
   push:
     branches: [main,develop]
+    paths-ignore:
+      - 'README.md'
+      - '**/README.md'
+      - '**/*.md'
 
-    workflow_dispatch:
+  workflow_dispatch:
 
 jobs:
   test-and-deploy:
