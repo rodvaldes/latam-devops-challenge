@@ -55,7 +55,7 @@ La infraestructura fue definida completamente con **Terraform**, permitiendo rep
 
 La estructura modular del código permite separar ambientes y reutilizar componentes.
 
-> El directorio `iac/terraform/` contiene los archivos `main.tf`, `variables.tf`, y `outputs.tf` que definen esta infraestructura.
+> El directorio `iac/terraform/` contiene los archivos `main.tf`, `variables.tf`, y `outputs.tf` que definen esta infraestructura en conjunto con los modulos iac/terraform/modules.
 ---
 
 ## Parte 2: Aplicaciones y CI/CD
@@ -63,7 +63,7 @@ La estructura modular del código permite separar ambientes y reutilizar compone
 - La API HTTP fue desarrollada con **FastAPI** y desplegada exitosamente en **Cloud Run**.
 - Se conecta a **BigQuery** para exponer los datos ingresados previamente vía Pub/Sub.
 - Se incluye una **prueba de integración** (`tests/test_api.py`) que valida que el endpoint `/datos` responde correctamente.
-- El despliegue fue realizado inicialmente de forma manual; se deja planteado un pipeline GitHub Actions para futuras automatizaciones.
+- El despliegue fue realizado inicialmente de forma manual; se deja implementado un pipeline GitHub Actions que ejecuta CI/CD de manera automática.
 
 ---
 
@@ -172,7 +172,7 @@ Este sistema sigue un patrón event-driven. Un publicador simula eventos de vuel
 
 ---
 
-## 🚀 Cómo correr el proyecto
+## ¿Cómo correr el proyecto?
 
 ```bash
 # Clonar el repositorio
@@ -203,7 +203,14 @@ python publisher/publisher.py
 
 * Se puede integrar más monitoreo con Prometheus + Grafana.
 
-* Pipeline CI/CD completo con validaciones y despliegue automatizado es parte del roadmap futuro.
+* Pipeline CI/CD completo con más validaciones.
+
+* Integración validación FinOps de costo de infra a partir del terraform plan. (Mover Finops al comienzo).
+
+* Integración con IDP Portal o Backstage.
+
+* Integración con Jira Cloud para obtención de métricas, gestión de proyecto, automatizaciones de flujo de "trabajo", habilitación ITSM con Jira Service Management.
+```
 
 Contacto
 Rodrigo Valdés
