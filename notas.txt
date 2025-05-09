@@ -1,0 +1,43 @@
+
+docker run -p 8000:8000 \
+  -e GOOGLE_APPLICATION_CREDENTIALS=/app/credenciales.json \
+  -v /Users/rvaldes/Desktop/cyberstage-admin-key.json:/app/credenciales.json \
+  fastapi-bigquery-app
+
+
+
+
+  
+-v ~/.kube:/root/.kube \
+  -v ~/.config/gcloud:/root/.config/gcloud \
+  -v $(pwd):/workspace \
+  -v ~/Desktop/cyberstage-admin-key.json:/root/cyberstage-admin-key.json
+
+
+```bash
+  # Reemplaza con tu project ID y región
+export PROJECT_ID=cyberstage
+export REGION=us-central1
+
+# Autenticación con Google
+gcloud auth configure-docker
+
+# Build de la imagen
+docker build -t gcr.io/$PROJECT_ID/fastapi-app:latest .
+
+# Push al Container Registry
+docker push gcr.io/$PROJECT_ID/fastapi-app:latest
+```
+
+
+```bash
+export PROJECT_ID=cyberstage
+export REGION=us-central1
+
+gcloud run deploy fastapi-app \
+  --image gcr.io/$PROJECT_ID/fastapi-app:latest \
+  --platform managed \
+  --region $REGION \
+  --allow-unauthenticated
+
+```

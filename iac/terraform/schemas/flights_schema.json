@@ -1,0 +1,8 @@
+[
+    { "name": "flight_id", "type": "STRING", "mode": "REQUIRED" },
+    { "name": "origin", "type": "STRING", "mode": "NULLABLE" },
+    { "name": "destination", "type": "STRING", "mode": "NULLABLE" },
+    { "name": "departure_time", "type": "TIMESTAMP", "mode": "NULLABLE" },
+    { "name": "arrival_time", "type": "TIMESTAMP", "mode": "NULLABLE" }
+]
+  
