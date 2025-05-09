@@ -7,7 +7,7 @@
 Aplicación FastAPI desplegada en Google Cloud Run como parte del challenge técnico para LATAM Airlines.  
 Demuestra despliegue automatizado, ingesta de datos con Pub/Sub, almacenamiento en BigQuery y exposición vía API HTTP.
 
-🔗 **API en producción:**  
+**API en producción:**  
 [https://fastapi-app-980942243451.us-central1.run.app/datos](https://fastapi-app-980942243451.us-central1.run.app/datos)
 
 ## Prueba
@@ -67,7 +67,7 @@ La estructura modular del código permite separar ambientes y reutilizar compone
 
 ---
 
-## 🧠 Parte 3: Pruebas y calidad
+## Parte 3: Pruebas y calidad
 
 - Se implementó una prueba de integración básica que:
   - Verifica el código de estado 200.
