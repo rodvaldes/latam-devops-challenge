@@ -24,7 +24,7 @@ def leer_datos():
     query = """
         SELECT * FROM `cyberstage.challenge.raw_events`
         ORDER BY timestamp DESC
-        LIMIT 10
+        LIMIT 5
     """
     query_job = client.query(query)
     resultados = [dict(row) for row in query_job.result()]
