@@ -212,7 +212,9 @@ python publisher/publisher.py
 
 - Integración con Jira Cloud para obtención de métricas, gestión de proyecto, automatizaciones de flujo de "trabajo", habilitación ITSM con Jira Service Management.
 
+Este commit se hizo desde el vuelo LA3 Airbus 321 SCL CCP.
+
 Contacto
 Rodrigo Valdés
-[rodrigovaldes@gmail.com]
+rodrigovaldes@gmail.com
 <https://github.com/rodvaldes>
